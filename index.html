@@ -6,9 +6,15 @@
   <title>chromium - localStorage - minimal test example</title>
 </head>
 <body>
-  <button onclick='var ls = localStorage'><code>var ls = localStorage</code></button>
-  <button onclick='console.log(localStorage)'><code>console.log(localStorage)</code></button>
-  <button onclick='var l = localStorage.length'><code>var l = localStorage.length</code></button>
-  <button onclick='localStorage.getItem("test")'><code>localStorage.getItem("test")</code></button>
+  Any of the following operations will cause Chromium to indicate, incorectly, that this site is using cookies/localstorage.
+  
+  <img src='invalid.png' width='200' />
+  
+  <hr/>
+  
+  <button onclick='var ls = localStorage'><code>var ls = localStorage</code></button><br/>
+  <button onclick='console.log(localStorage)'><code>console.log(localStorage)</code></button><br/>
+  <button onclick='var l = localStorage.length'><code>var l = localStorage.length</code></button><br/>
+  <button onclick='localStorage.getItem("test")'><code>localStorage.getItem("test")</code></button><br/>
 </body>
 </html>
